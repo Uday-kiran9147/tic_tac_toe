@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Tic-Tac-Toe',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -254,45 +255,45 @@ class _TicTacToeGameState extends State<TicTacToeGame>
               ),
             ),
           ),
-          Positioned(
-            bottom: 20,
-            left: 10,
-            child: Text.rich(
-              const TextSpan(
-                // text: 'Current Player ',
-                style: TextStyle(fontSize: 20),
-                children: <TextSpan>[
-                  TextSpan(
-                    text: 'by..',
-                    style: TextStyle(
-                      fontSize: 10,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                    ),
-                  ),
-                  TextSpan(
-                    text: '..♥\n',
-                    style: TextStyle(
-                      fontSize: 10,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.red,
-                    ),
-                  ),
-                  TextSpan(
-                    text: '...Uday',
-                    style: TextStyle(
-                      fontSize: 8,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                    ),
-                  ),
-                ],
-              ),
-              style: TextStyle(
-                  fontSize: 20,
-                  color: currentPlayer == 'X' ? Colors.amber : Colors.blue),
-            ),
-          ),
+          // Positioned(
+          //   bottom: 20,
+          //   left: 10,
+          //   child: Text.rich(
+          //     const TextSpan(
+          //       // text: 'Current Player ',
+          //       style: TextStyle(fontSize: 20),
+          //       children: <TextSpan>[
+          //         TextSpan(
+          //           text: 'by..',
+          //           style: TextStyle(
+          //             fontSize: 10,
+          //             fontWeight: FontWeight.bold,
+          //             color: Colors.black,
+          //           ),
+          //         ),
+          //         TextSpan(
+          //           text: '..♥\n',
+          //           style: TextStyle(
+          //             fontSize: 10,
+          //             fontWeight: FontWeight.bold,
+          //             color: Colors.red,
+          //           ),
+          //         ),
+          //         TextSpan(
+          //           text: '...Uday',
+          //           style: TextStyle(
+          //             fontSize: 8,
+          //             fontWeight: FontWeight.bold,
+          //             color: Colors.black,
+          //           ),
+          //         ),
+          //       ],
+          //     ),
+          //     style: TextStyle(
+          //         fontSize: 20,
+          //         color: currentPlayer == 'X' ? Colors.amber : Colors.blue),
+          //   ),
+          // ),
           if (gameOver)
             Container(
               color: Colors.black.withOpacity(0.5),
