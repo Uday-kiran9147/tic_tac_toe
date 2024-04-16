@@ -2,6 +2,10 @@
 
 Welcome to Classroom Tic-Tac-Toe, a creative and fun game designed to beat boredom during class breaks! 🎉
 
+
+<img src = "tictactoe.png">
+
+
 ## Overview
 
 Playing tic-tac-toe is a fantastic way to pass the time and keep yourself entertained during those seemingly endless class breaks. This project was born out of the desire to turn those moments of boredom into an engaging and enjoyable experience.
