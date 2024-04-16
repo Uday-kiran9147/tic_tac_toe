@@ -4,6 +4,8 @@ Welcome to Classroom Tic-Tac-Toe, a creative and fun game designed to beat bored
 
 
 <img src = "tictactoe.png">
+<img src = "win.png">
+<img src = "draw.png">
 
 
 ## Overview
